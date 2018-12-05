@@ -1,0 +1,4 @@
+C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock\bin\Debug\NetFxMock.dll
+C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock\bin\Debug\NetFxMock.pdb
+C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock\obj\Debug\NetFxMock.dll
+C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock\obj\Debug\NetFxMock.pdb

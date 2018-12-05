@@ -1,0 +1,36 @@
+// NetFxMockProfiler.idl : IDL source for NetFxMockProfiler
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (NetFxMockProfiler.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(3ba25e61-9db1-4ca3-8f51-5fc8427cea82),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IProfilerInterface : IDispatch
+{
+};
+[
+	uuid(D69B2CB0-1D9B-496B-9E5D-267DE010ABD1),
+	version(1.0),
+]
+library NetFxMockProfilerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(fd9efb8f-b2c5-46b9-bd30-4cbf8202e033)
+	]
+	coclass ProfilerInterface
+	{
+		[default] interface IProfilerInterface;
+	};
+};
+
+import "shobjidl.idl";

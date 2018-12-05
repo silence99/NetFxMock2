@@ -1,0 +1,25 @@
+﻿Build started 2018/12/5 23:33:29.
+Project "C:\work\code\NetFxMock3\NetFxMockProfiler\NetFxMockProfiler\NetFxMockProfiler.vcxproj" on node 2 (Build target(s)).
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\NetFxMockProfiler.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ProfilerInterface.cpp
+  ProfilerInterface.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt NetFxMockProfiler_i.c
+  NetFxMockProfiler_i.c
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /l"0x0409" /IDebug\ /nologo /fo"Debug\NetFxMockProfiler.res" NetFxMockProfiler.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.dll" /INCREMENTAL /NOLOGO comsvcs.lib log4cplusSD.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\NetFxMockProfiler.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Debug\NetFxMockProfiler.res
+  Debug\dllmain.obj
+  Debug\NetFxMockProfiler.obj
+  Debug\NetFxMockProfiler_i.obj
+  Debug\ProfilerInterface.obj
+  Debug\stdafx.obj
+     Creating library C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.lib and object C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.exp
+  NetFxMockProfiler.vcxproj -> C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.dll
+RegisterOutput:
+  regsvr32 /s "C:\work\code\NetFxMock3\NetFxMockProfiler\Debug\NetFxMockProfiler.dll"
+Done Building Project "C:\work\code\NetFxMock3\NetFxMockProfiler\NetFxMockProfiler\NetFxMockProfiler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.96
