@@ -6,6 +6,8 @@
 #include <CorHdr.h>
 #include <cor.h>
 #include <corprof.h>
+#include "ILog.h"
+#include "Util.h"
 
 #pragma  comment(lib,"corguids.lib")
 
@@ -22,7 +24,8 @@ class ATL_NO_VTABLE CProfilerInterface :
 	public CComObjectRootEx<CComSingleThreadModel>,
 	public CComCoClass<CProfilerInterface, &CLSID_ProfilerInterface>,
 	public IDispatchImpl<IProfilerInterface, &IID_IProfilerInterface, &LIBID_NetFxMockProfilerLib, /*wMajor =*/ 1, /*wMinor =*/ 0>,
-	public ICorProfilerCallback4
+	public ICorProfilerCallback4,
+	public ILog
 {
 public:
 	CProfilerInterface()
@@ -32,6 +35,19 @@ public:
 	{
 
 	}
+
+	CComQIPtr<ICorProfilerInfo> pCorProfilerInfo;
+	CComQIPtr<ICorProfilerInfo2> pCorProfilerInfo2;
+	CComQIPtr<ICorProfilerInfo3> pCorProfilerInfo3;
+	CComQIPtr<ICorProfilerInfo4> pCorProfilerInfo4;
+
+	void MapFunction(FunctionID);
+	static UINT_PTR _stdcall FunctionMapper(FunctionID functionId, BOOL *pbHookFunction);
+	// callback functions
+	void Enter(FunctionID functionID, UINT_PTR clientData, COR_PRF_FRAME_INFO frameInfo, COR_PRF_FUNCTION_ARGUMENT_INFO *argumentInfo);
+	void Leave(FunctionID functionID, UINT_PTR clientData, COR_PRF_FRAME_INFO frameInfo, COR_PRF_FUNCTION_ARGUMENT_RANGE *argumentRange);
+	void Tailcall(FunctionID functionID, UINT_PTR clientData, COR_PRF_FRAME_INFO frameInfo);
+	HRESULT GetFullMethodName(FunctionID functionID, LPWSTR wszMethod, int cMethod);
 
 	DECLARE_REGISTRY_RESOURCEID(106)
 
@@ -56,9 +72,10 @@ public:
 	void FinalRelease()
 	{
 	}
+	STDMETHOD(SetEvent)();
 
 	HRESULT STDMETHODCALLTYPE Initialize(
-		/* [in] */ IUnknown *pICorProfilerInfoUnk) { return S_OK; }
+		/* [in] */ IUnknown *pICorProfilerInfoUnk);
 
 	HRESULT STDMETHODCALLTYPE Shutdown(void) { return S_OK; }
 

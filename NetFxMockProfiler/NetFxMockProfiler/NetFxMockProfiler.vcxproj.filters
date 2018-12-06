@@ -34,6 +34,15 @@
     <ClCompile Include="ProfilerInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ILog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnterFunctionListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -52,6 +61,15 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="ProfilerInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ILog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnterFunctionListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -73,6 +91,7 @@
     <None Include="ProfilerInterface.rgs">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="log.properties" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="NetFxMockProfiler.idl">

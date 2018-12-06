@@ -20,7 +20,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -43,6 +43,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(solutionDir)packages\log4cplus\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(solutionDir)packages\log4cplus\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\NetFxMock.Test\NetFxMock.Test\bin\Debug</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
@@ -125,6 +126,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="EnterFunctionListener.cpp" />
+    <ClCompile Include="ILog.cpp" />
     <ClCompile Include="NetFxMockProfiler.cpp" />
     <ClCompile Include="NetFxMockProfiler_i.c">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
@@ -139,14 +142,18 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dllmain.h" />
+    <ClInclude Include="EnterFunctionListener.h" />
+    <ClInclude Include="ILog.h" />
     <ClInclude Include="NetFxMockProfiler_i.h" />
     <ClInclude Include="ProfilerInterface.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="NetFxMockProfiler.rc" />
@@ -155,6 +162,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="log.properties" />
     <None Include="NetFxMockProfiler.def" />
     <None Include="NetFxMockProfiler.rgs" />
     <None Include="ProfilerInterface.rgs" />

@@ -4,3 +4,11 @@ C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.Test.p
 C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.csprojResolveAssemblyReference.cache
 C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.exe
 C:\work\code\NetFxMock2\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.pdb
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.Test.exe.config
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.exe
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.pdb
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.Test.exe
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.Test.pdb
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.dll
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\bin\Debug\NetFxMock.pdb
+C:\work\code\NetFxMock3\NetFxMock.Test\NetFxMock.Test\obj\Debug\NetFxMock.Test.csprojResolveAssemblyReference.cache
